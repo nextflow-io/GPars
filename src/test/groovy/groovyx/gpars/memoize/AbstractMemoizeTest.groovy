@@ -20,7 +20,7 @@ package groovyx.gpars.memoize
  * @author Vaclav Pech
  * Date: Jun 22, 2010
  */
-public abstract class AbstractMemoizeTest extends GroovyTestCase {
+public abstract class AbstractMemoizeTest extends groovy.test.GroovyTestCase {
 
     public void testCorrectness() {
         groovyx.gpars.GParsPool.withPool(5) {

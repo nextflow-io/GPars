@@ -24,7 +24,7 @@ import java.util.concurrent.ConcurrentHashMap
  * Date: Nov 6, 2009
  */
 
-public class ParallelArrayTest extends GroovyTestCase {
+public class ParallelArrayTest extends groovy.test.GroovyTestCase {
 
     public void testReduce() {
         GParsPool.withPool(5) {

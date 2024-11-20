@@ -25,7 +25,7 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicInteger
 
-public class ReactorTest extends GroovyTestCase {
+public class ReactorTest extends groovy.test.GroovyTestCase {
 
     public void testSimple() {
         def res = []
@@ -61,9 +61,9 @@ public class ReactorTest extends GroovyTestCase {
 
     public void testMessageProcessing() {
         final def group = new DefaultPGroup(4)
-        final def result1 = new AtomicInteger(0)
-        final def result2 = new AtomicInteger(0)
-        final def result3 = new AtomicInteger(0)
+        def result1 = new AtomicInteger(0)
+        def result2 = new AtomicInteger(0)
+        def result3 = new AtomicInteger(0)
 
         final def processor = group.reactor {
             2 * it

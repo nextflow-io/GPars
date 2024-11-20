@@ -38,8 +38,7 @@ final Actor actor = group.actor {
 
 println actor
 
-final Actor me
-me = group.actor {
+final Actor me = group.actor {
     def message1 = 1
     def message2 = 2
     def message3 = 3

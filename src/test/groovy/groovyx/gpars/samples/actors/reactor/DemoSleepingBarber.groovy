@@ -45,9 +45,8 @@ private def doTheHaircut(Random random) {
     Thread.sleep(random.nextInt(10) * 1000)
 }
 
-final Actor waitingRoom
 
-waitingRoom = group.actor {
+final Actor waitingRoom = group.actor {
     final int capacity = 5
     final List<Customer> waitingCustomers = []
     boolean barberAsleep = true

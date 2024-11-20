@@ -7,11 +7,14 @@ cobertura.ser
 buildSrc/.gradle
 buildSrc/build
 *.iws
+*.ipr
+*.iml
 GPars.ipr
 GPars.iml
 .classpath
 .project
 .settings
+.idea
 *~
 /caliper-charts/
 /caliper-results/

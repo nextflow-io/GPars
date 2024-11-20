@@ -20,7 +20,7 @@ package groovyx.gpars
  * @author Vaclav Pech
  * Date: Oct 23, 2008
  */
-public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
+public class GParsExecutorsPoolOnMapTest extends groovy.test.GroovyTestCase {
 
     public void testMapSpecificsForEach() {
         def map = [a: 1, b: 2, c: 3, d: 4, e: 5]
@@ -51,8 +51,8 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
     public void testMapSpecificsForCollect() {
         def map = [a: 1, b: 2, c: 3, d: 4, e: 5]
         GParsExecutorsPool.withPool {
-            final def keyResults = [].asSynchronized()
-            final def valueResults = [].asSynchronized()
+            def keyResults = [].asSynchronized()
+            def valueResults = [].asSynchronized()
 
             keyResults = map.collectParallel {item -> item.key}
             valueResults = map.collectParallel {item -> item.value}

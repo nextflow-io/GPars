@@ -20,14 +20,13 @@ import groovyx.gpars.dataflow.Dataflows
 import java.util.concurrent.ExecutionException
 import static groovyx.gpars.GParsPool.runForkJoin
 import static groovyx.gpars.GParsPool.withPool
-
 /**
  *
  * @author Vaclav Pech
  * Date: Jan 15, 2010
  */
 
-class ForkJoinBuilderTest extends GroovyTestCase {
+class ForkJoinBuilderTest extends groovy.test.GroovyTestCase {
     /**
      * Splits a list of numbers in half
      */

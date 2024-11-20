@@ -21,7 +21,7 @@ import groovyx.gpars.remote.LocalHost
 import groovyx.gpars.remote.LocalNode
 import java.util.concurrent.CountDownLatch
 
-public abstract class CommunicationTestBase extends GroovyTestCase {
+public abstract class CommunicationTestBase extends groovy.test.GroovyTestCase {
 
     LocalHost getTransportProvider() {}
 

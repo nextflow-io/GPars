@@ -22,7 +22,7 @@ import groovyx.gpars.remote.LocalNode
 import groovyx.gpars.remote.netty.NettyTransportProvider
 import java.util.concurrent.TimeUnit
 
-public class SyncTest extends GroovyTestCase {
+public class SyncTest extends groovy.test.GroovyTestCase {
     void testDistSync() {
         final def result = new DataflowVariable()
         def node1 = new LocalNode(new NettyTransportProvider(), {

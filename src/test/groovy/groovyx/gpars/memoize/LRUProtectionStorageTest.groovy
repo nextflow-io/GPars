@@ -20,7 +20,7 @@ package groovyx.gpars.memoize
  * @author Vaclav Pech
  * Date: Jun 22, 2010
  */
-public class LRUProtectionStorageTest extends GroovyTestCase {
+public class LRUProtectionStorageTest extends groovy.test.GroovyTestCase {
     public void testLRUStrategyWithOneElement() {
         def storage = new LRUProtectionStorage(1)
         assert storage.size() == 0

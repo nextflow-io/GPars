@@ -23,8 +23,7 @@ import groovyx.gpars.actor.DefaultActor
  * @author Jan Novotný
  */
 
-final DefaultActor me
-me = Actors.actor {
+final DefaultActor me = Actors.actor {
     def message = 1
 
     message.metaClass.onDeliveryError = {->
