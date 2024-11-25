@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit
  * Date: Sep 9, 2009
  */
 
-public class DataflowOperatorGentlyStopTest extends groovy.test.GroovyTestCase {
+public class DataflowOperatorGentlyStopTest extends GroovyTestCase {
 
     private PGroup group
 

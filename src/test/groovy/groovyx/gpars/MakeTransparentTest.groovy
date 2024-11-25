@@ -25,7 +25,7 @@ import java.util.concurrent.CyclicBarrier
  * Date: Oct 30, 2009
  */
 @SuppressWarnings("SpellCheckingInspection")
-class MakeTransparentTest extends groovy.test.GroovyTestCase {
+class MakeTransparentTest extends GroovyTestCase {
 
     public void testMakeTransparentAvailability() {
         shouldFail {

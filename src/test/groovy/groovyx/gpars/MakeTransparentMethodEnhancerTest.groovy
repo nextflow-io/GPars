@@ -25,7 +25,7 @@ import java.util.concurrent.ConcurrentHashMap
  */
 
 @SuppressWarnings("SpellCheckingInspection")
-class MakeTransparentMethodEnhancerTest extends groovy.test.GroovyTestCase {
+class MakeTransparentMethodEnhancerTest extends GroovyTestCase {
 
     public void testTransparentEach() {
         def items = [1, 2, 3, 4, 5]

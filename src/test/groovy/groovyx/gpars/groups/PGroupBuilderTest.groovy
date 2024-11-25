@@ -24,7 +24,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import jsr166y.ForkJoinPool
 
-class PGroupBuilderTest extends groovy.test.GroovyTestCase {
+class PGroupBuilderTest extends GroovyTestCase {
     public void testCreationFromPool() {
         final ExecutorService service = Executors.newFixedThreadPool(2)
         final pool = new DefaultPool(service)

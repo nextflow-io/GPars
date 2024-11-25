@@ -27,7 +27,7 @@ import groovyx.gpars.dataflow.DataflowBroadcast
 /**
  * @author Vaclav Pech
  */
-public class GracefulShutdownTest extends groovy.test.GroovyTestCase {
+public class GracefulShutdownTest extends GroovyTestCase {
     private PGroup group
     final DataflowQueue a = new DataflowQueue()
     final DataflowQueue b = new DataflowQueue()

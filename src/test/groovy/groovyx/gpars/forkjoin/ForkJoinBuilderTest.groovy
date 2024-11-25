@@ -26,7 +26,7 @@ import static groovyx.gpars.GParsPool.withPool
  * Date: Jan 15, 2010
  */
 
-class ForkJoinBuilderTest extends groovy.test.GroovyTestCase {
+class ForkJoinBuilderTest extends GroovyTestCase {
     /**
      * Splits a list of numbers in half
      */

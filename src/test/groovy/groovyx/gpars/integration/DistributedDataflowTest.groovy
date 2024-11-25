@@ -22,7 +22,7 @@ import groovyx.gpars.remote.LocalNode
 import groovyx.gpars.remote.netty.NettyTransportProvider
 import java.util.concurrent.TimeUnit
 
-public class DistributedDataflowTest extends groovy.test.GroovyTestCase {
+public class DistributedDataflowTest extends GroovyTestCase {
     void testDF() {
         final Dataflows df = new Dataflows()
 

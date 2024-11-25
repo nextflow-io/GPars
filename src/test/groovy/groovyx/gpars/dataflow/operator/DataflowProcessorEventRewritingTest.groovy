@@ -25,7 +25,7 @@ import groovyx.gpars.group.PGroup
 /**
  * @author Vaclav Pech
  */
-class DataflowProcessorEventRewritingTest extends groovy.test.GroovyTestCase {
+class DataflowProcessorEventRewritingTest extends GroovyTestCase {
 
     private PGroup group
     final DataflowQueue a = new DataflowQueue()

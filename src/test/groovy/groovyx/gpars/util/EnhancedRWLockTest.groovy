@@ -19,13 +19,14 @@ package groovyx.gpars.util
 import java.util.concurrent.locks.ReentrantReadWriteLock
 import java.util.concurrent.TimeUnit
 import groovyx.gpars.dataflow.DataflowVariable
+
 /**
  *
  * @author Vaclav Pech
  * Date: Jan 15, 2010
  */
 
-class EnhancedRWLockTest extends groovy.test.GroovyTestCase {
+class EnhancedRWLockTest extends GroovyTestCase {
     public void testReadLock() {
         final ReentrantReadWriteLock lock = new EnhancedRWLock(false)
         lock.withReadLock {

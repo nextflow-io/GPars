@@ -63,6 +63,10 @@ apply {
 apply from: 'gradle/docs.gradle'
 apply from: 'gradle/docsDependencies.gradle'
 
+tasks.withType(GroovyCompile).matching { it.name == "compileTestGroovy" }.configureEach {
+    groovyOptions.configurationScript = file('config/compiler-config.groovy')
+}
+
 task copyDSLDefinitions(type: Copy) {
     into "$buildDir/classes/main"
     from(sourceSets.main.allSource) {

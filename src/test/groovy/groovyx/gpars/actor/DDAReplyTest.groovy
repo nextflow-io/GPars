@@ -18,7 +18,7 @@ package groovyx.gpars.actor
 
 import groovyx.gpars.dataflow.Dataflows
 
-class DDAReplyTest extends groovy.test.GroovyTestCase {
+class DDAReplyTest extends GroovyTestCase {
     public void testSender() {
         final Dataflows df = new Dataflows()
 

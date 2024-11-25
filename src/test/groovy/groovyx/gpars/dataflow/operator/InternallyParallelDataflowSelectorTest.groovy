@@ -26,7 +26,7 @@ import groovyx.gpars.group.PGroup
  * Date: Mar 8, 2010
  */
 
-public class InternallyParallelDataflowSelectorTest extends groovy.test.GroovyTestCase {
+public class InternallyParallelDataflowSelectorTest extends GroovyTestCase {
 
     private PGroup group
 

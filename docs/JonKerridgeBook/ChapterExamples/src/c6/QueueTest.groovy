@@ -20,7 +20,7 @@ import org.jcsp.lang.*
 import org.jcsp.groovy.*
 import c5.Queue
 
-class QueueTest extends groovy.test.GroovyTestCase {
+class QueueTest extends GroovyTestCase {
 
     void testQueue() {
 

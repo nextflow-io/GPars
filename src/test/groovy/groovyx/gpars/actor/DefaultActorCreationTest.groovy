@@ -22,7 +22,7 @@ import groovyx.gpars.dataflow.DataflowVariable
 /**
  * @author Vaclav Pech
  */
-class DefaultActorCreationTest extends groovy.test.GroovyTestCase {
+class DefaultActorCreationTest extends GroovyTestCase {
     public void testCreationWithAct() {
         final def result = new DataflowVariable()
         final def thread = new DataflowVariable()

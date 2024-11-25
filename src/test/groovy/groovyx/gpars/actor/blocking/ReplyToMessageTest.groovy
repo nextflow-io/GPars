@@ -24,7 +24,7 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.CyclicBarrier
 import java.util.concurrent.atomic.AtomicBoolean
 
-public class ReplyToMessageTest extends groovy.test.GroovyTestCase {
+public class ReplyToMessageTest extends GroovyTestCase {
 
     def group
 

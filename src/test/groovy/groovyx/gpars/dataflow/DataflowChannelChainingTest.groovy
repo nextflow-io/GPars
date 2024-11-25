@@ -23,7 +23,7 @@ import groovyx.gpars.group.PGroup
 /**
  * @author Vaclav Pech
  */
-class DataflowChannelChainingTest extends groovy.test.GroovyTestCase {
+class DataflowChannelChainingTest extends GroovyTestCase {
     private PGroup group
 
     @Override

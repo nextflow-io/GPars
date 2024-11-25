@@ -24,7 +24,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 import static groovyx.gpars.actor.Actors.actor
 
-public class ReplyToMessageTest extends groovy.test.GroovyTestCase {
+public class ReplyToMessageTest extends GroovyTestCase {
 
     protected void setUp() {
         super.setUp();

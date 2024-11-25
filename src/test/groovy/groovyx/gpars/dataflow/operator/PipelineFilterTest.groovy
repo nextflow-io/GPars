@@ -24,7 +24,7 @@ import org.codehaus.groovy.runtime.NullObject
 /**
  * @author Vaclav Pech
  */
-public class PipelineFilterTest extends groovy.test.GroovyTestCase {
+public class PipelineFilterTest extends GroovyTestCase {
 
     private PGroup group
 

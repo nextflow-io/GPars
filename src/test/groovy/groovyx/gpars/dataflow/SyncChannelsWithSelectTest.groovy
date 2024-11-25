@@ -18,7 +18,7 @@ package groovyx.gpars.dataflow
 
 import static groovyx.gpars.dataflow.Dataflow.select
 
-class SyncChannelsWithSelectTest extends groovy.test.GroovyTestCase {
+class SyncChannelsWithSelectTest extends GroovyTestCase {
     public void testSelect() {
         final DataflowReadChannel queue = new SyncDataflowQueue()
         final SyncDataflowBroadcast broadcast = new SyncDataflowBroadcast()

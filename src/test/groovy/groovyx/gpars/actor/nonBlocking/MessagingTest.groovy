@@ -27,7 +27,7 @@ import java.util.concurrent.atomic.AtomicInteger
  * @author Vaclav Pech
  * Date: Feb 20, 2009
  */
-public class MessagingTest extends groovy.test.GroovyTestCase {
+public class MessagingTest extends GroovyTestCase {
     PGroup group
 
     protected void setUp() {

@@ -19,7 +19,7 @@ package groovyx.gpars.forkjoin
 import static groovyx.gpars.GParsPool.runForkJoin
 import static groovyx.gpars.GParsPool.withPool
 
-class DirectChildrenCallTest extends groovy.test.GroovyTestCase {
+class DirectChildrenCallTest extends GroovyTestCase {
     public void testDirectFib() {
         Closure fib = {number ->
             if (number <= 2) {

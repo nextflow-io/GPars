@@ -23,7 +23,7 @@ import groovyx.gpars.group.PGroup
 /**
  * @author Vaclav Pech
  */
-public class ProcessorPauseResumeTest extends groovy.test.GroovyTestCase {
+public class ProcessorPauseResumeTest extends GroovyTestCase {
     private PGroup group
     final DataflowQueue a = new DataflowQueue()
     final DataflowQueue b = new DataflowQueue()

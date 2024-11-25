@@ -26,7 +26,7 @@ import groovyx.gpars.group.PGroup
 /**
  * @author Vaclav Pech
  */
-class ParallelGroupTest extends groovy.test.GroovyTestCase {
+class ParallelGroupTest extends GroovyTestCase {
     private PGroup group
 
     protected void setUp() {

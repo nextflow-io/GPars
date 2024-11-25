@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit
  * Date: Sep 9, 2009
  */
 
-public class SplitterTest extends groovy.test.GroovyTestCase {
+public class SplitterTest extends GroovyTestCase {
 
     private PGroup group
 

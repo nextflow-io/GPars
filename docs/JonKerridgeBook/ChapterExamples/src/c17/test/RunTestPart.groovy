@@ -24,7 +24,7 @@ import org.jcsp.net.tcpip.*
 import org.jcsp.groovy.util.*
 
 
-class RunTestPart extends groovy.test.GroovyTestCase {
+class RunTestPart extends GroovyTestCase {
 
     void testSomething() {
 

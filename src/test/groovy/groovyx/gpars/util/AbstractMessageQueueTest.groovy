@@ -18,7 +18,7 @@ package groovyx.gpars.util
 
 import java.util.concurrent.CyclicBarrier
 
-abstract class AbstractMessageQueueTest extends groovy.test.GroovyTestCase {
+abstract class AbstractMessageQueueTest extends GroovyTestCase {
 
     protected abstract MessageQueue createMessageQueue()
 

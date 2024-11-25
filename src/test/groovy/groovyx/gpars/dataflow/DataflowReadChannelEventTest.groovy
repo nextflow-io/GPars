@@ -16,7 +16,7 @@
 
 package groovyx.gpars.dataflow
 
-public class DataflowReadChannelEventTest extends groovy.test.GroovyTestCase {
+public class DataflowReadChannelEventTest extends GroovyTestCase {
 
     public void testVariable() {
         int counter = 0

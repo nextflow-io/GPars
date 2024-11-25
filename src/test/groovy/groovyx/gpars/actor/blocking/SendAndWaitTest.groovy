@@ -23,7 +23,7 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.CyclicBarrier
 import java.util.concurrent.TimeUnit
 
-abstract public class SendAndWaitTest extends groovy.test.GroovyTestCase {
+abstract public class SendAndWaitTest extends GroovyTestCase {
 
     public void testSuccessfulMessages() {
         CountDownLatch latch = new CountDownLatch(1)

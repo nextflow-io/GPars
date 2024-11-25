@@ -24,7 +24,7 @@ import jsr166y.RecursiveAction
 /**
  * @author Vaclav Pech
  */
-public class GParsPoolAsyncFunTest extends groovy.test.GroovyTestCase {
+public class GParsPoolAsyncFunTest extends GroovyTestCase {
 
     public void testFib() {
         groovyx.gpars.GParsPool.withPool(5) {

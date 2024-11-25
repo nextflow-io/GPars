@@ -26,7 +26,7 @@ import java.util.concurrent.CyclicBarrier
  */
 
 @SuppressWarnings("SpellCheckingInspection")
-class MakeTransparentCornerCaseTest extends groovy.test.GroovyTestCase {
+class MakeTransparentCornerCaseTest extends GroovyTestCase {
 
     public void testUsingNonTransparentEachInTransparentContext() {
         def items = [1, 2, 3, 4, 5]

@@ -20,7 +20,7 @@ package groovyx.gpars.memoize
  * @author Vaclav Pech
  * Date: Jun 22, 2010
  */
-public class NullValueTest extends groovy.test.GroovyTestCase {
+public class NullValueTest extends GroovyTestCase {
     public void testEquals() throws Exception {
         assert new NullValue() == new NullValue()
     }

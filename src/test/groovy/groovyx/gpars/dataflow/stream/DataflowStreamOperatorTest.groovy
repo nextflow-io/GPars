@@ -23,7 +23,7 @@ import static groovyx.gpars.dataflow.Dataflow.select
 import static groovyx.gpars.dataflow.Dataflow.selector
 import static groovyx.gpars.dataflow.Dataflow.task
 
-class DataflowStreamOperatorTest extends groovy.test.GroovyTestCase {
+class DataflowStreamOperatorTest extends GroovyTestCase {
     public void testOperatorCommunication() {
         final DataflowStream a = new DataflowStream()
         final DataflowStream b = new DataflowStream()

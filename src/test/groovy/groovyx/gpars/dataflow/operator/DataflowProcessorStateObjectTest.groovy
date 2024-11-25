@@ -24,7 +24,7 @@ import groovyx.gpars.group.PGroup
  * Date: Sep 9, 2009
  */
 
-public class DataflowProcessorStateObjectTest extends groovy.test.GroovyTestCase {
+public class DataflowProcessorStateObjectTest extends GroovyTestCase {
 
     private PGroup group
 

@@ -20,7 +20,7 @@ import org.jcsp.lang.*
 import org.jcsp.groovy.*
 import c2.ProduceHW
 
-class HelloWorldTest extends groovy.test.GroovyTestCase {
+class HelloWorldTest extends GroovyTestCase {
 
     void testMessage() {
 
