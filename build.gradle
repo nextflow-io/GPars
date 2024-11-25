@@ -278,7 +278,6 @@ javadoc {
     options.windowTitle(titleForDocumentation)
     options.docTitle(titleForDocumentation)
     options.footer(copyrightString)
-    options.addBooleanOption('html4', true)
 
     doFirst {
         javadoc.title = titleForDocumentation
