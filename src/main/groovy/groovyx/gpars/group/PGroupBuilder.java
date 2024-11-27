@@ -19,9 +19,9 @@ package groovyx.gpars.group;
 import groovyx.gpars.scheduler.DefaultPool;
 import groovyx.gpars.scheduler.FJPool;
 import groovyx.gpars.scheduler.Pool;
-import jsr166y.ForkJoinPool;
 
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.ForkJoinPool;
 
 /**
  * Provides convenience factory methods to build PGroups from various types of thread pools

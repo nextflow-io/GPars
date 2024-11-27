@@ -16,11 +16,10 @@
 
 package groovyx.gpars
 
-import jsr166y.ForkJoinPool
-
 import java.lang.Thread.UncaughtExceptionHandler
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.CyclicBarrier
+import java.util.concurrent.ForkJoinPool
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference
 

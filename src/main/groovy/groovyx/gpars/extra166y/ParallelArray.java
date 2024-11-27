@@ -6,8 +6,6 @@
 
 package groovyx.gpars.extra166y;
 
-import jsr166y.ForkJoinPool;
-
 import java.lang.reflect.Array;
 import java.util.AbstractList;
 import java.util.ArrayList;
@@ -18,6 +16,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.RandomAccess;
+import java.util.concurrent.ForkJoinPool;
 
 import static groovyx.gpars.extra166y.Ops.BinaryOp;
 import static groovyx.gpars.extra166y.Ops.BinaryPredicate;

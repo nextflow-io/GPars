@@ -28,11 +28,11 @@ import groovyx.gpars.memoize.NullProtectionStorage
 import groovyx.gpars.memoize.NullValue
 import groovyx.gpars.scheduler.FJPool
 import groovyx.gpars.util.PAUtils
-import jsr166y.ForkJoinPool
 
 import java.lang.ref.ReferenceQueue
 import java.lang.ref.SoftReference
 import java.util.concurrent.Future
+import java.util.concurrent.ForkJoinPool;
 
 import static groovyx.gpars.util.PAGroovyUtils.createCollection
 

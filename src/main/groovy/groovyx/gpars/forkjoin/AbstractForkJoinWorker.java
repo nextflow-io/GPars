@@ -16,12 +16,12 @@
 
 package groovyx.gpars.forkjoin;
 
-import jsr166y.RecursiveTask;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.RecursiveTask;
 
 /**
  * Implements the ForkJoin worker contract.
