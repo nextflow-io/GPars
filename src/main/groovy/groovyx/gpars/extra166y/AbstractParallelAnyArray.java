@@ -6,12 +6,11 @@
 
 package groovyx.gpars.extra166y;
 
-import jsr166y.ForkJoinPool;
-
 import java.lang.reflect.Array;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static groovyx.gpars.extra166y.Ops.*;

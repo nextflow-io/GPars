@@ -6,9 +6,8 @@
 
 package groovyx.gpars.extra166y;
 
-import jsr166y.ForkJoinPool;
-
 import java.util.Comparator;
+import java.util.concurrent.ForkJoinPool;
 
 import static groovyx.gpars.extra166y.Ops.BinaryOp;
 import static groovyx.gpars.extra166y.Ops.IntAndObjectToDouble;

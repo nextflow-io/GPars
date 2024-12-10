@@ -155,7 +155,7 @@ public class DataflowsTest extends GroovyTestCase {
             barrier.await()
         }
 
-        final def y = data.y
+        def y = data.y
         assertNull y
 
         y = data.y  //retry

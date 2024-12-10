@@ -47,7 +47,7 @@ public class ReactorLifeCycleTest extends GroovyTestCase {
     public void testInternalStop() {
         final def barrier = new CyclicBarrier(2)
         final AtomicInteger counter = new AtomicInteger(0)
-        final def unprocessedMessages = []
+        def unprocessedMessages = []
 
         final Actor actor = group.reactor {
             barrier.await()
@@ -101,7 +101,7 @@ public class ReactorLifeCycleTest extends GroovyTestCase {
     public void testInternalTerminate() {
         final def barrier = new CyclicBarrier(2)
         final AtomicInteger counter = new AtomicInteger(0)
-        final def unprocessedMessages = []
+        def unprocessedMessages = []
 
         final Actor actor = group.reactor {
             barrier.await()

@@ -6,9 +6,8 @@
 
 package groovyx.gpars.extra166y;
 
-import jsr166y.ThreadLocalRandom;
-
 import java.util.Comparator;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static groovyx.gpars.extra166y.Ops.BinaryDoublePredicate;
 import static groovyx.gpars.extra166y.Ops.BinaryIntPredicate;

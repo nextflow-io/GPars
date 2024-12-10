@@ -20,7 +20,6 @@ import groovyx.gpars.dataflow.Dataflows
 import java.util.concurrent.ExecutionException
 import static groovyx.gpars.GParsPool.runForkJoin
 import static groovyx.gpars.GParsPool.withPool
-
 /**
  *
  * @author Vaclav Pech

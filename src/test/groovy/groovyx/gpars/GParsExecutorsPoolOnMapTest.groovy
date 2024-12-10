@@ -51,8 +51,8 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
     public void testMapSpecificsForCollect() {
         def map = [a: 1, b: 2, c: 3, d: 4, e: 5]
         GParsExecutorsPool.withPool {
-            final def keyResults = [].asSynchronized()
-            final def valueResults = [].asSynchronized()
+            def keyResults = [].asSynchronized()
+            def valueResults = [].asSynchronized()
 
             keyResults = map.collectParallel {item -> item.key}
             valueResults = map.collectParallel {item -> item.value}
@@ -90,7 +90,7 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
             assert map.findAnyParallel {item -> item.key == 'c'}.key == 'c'
             assert map.findAnyParallel {k, v -> k == 'c'}.value == 3
             assert map.findAnyParallel {item -> item.value > 3}.key in ['d', 'e']
-            assert map.findAnyParallel {k, v -> v.value > 3}.value in [4, 5]
+            assert map.findAnyParallel {k, v -> v > 3}.value in [4, 5]
         }
     }
 
@@ -100,7 +100,7 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
             assert map.findParallel {item -> item.key == 'c'}.key == 'c'
             assert map.findParallel {k, v -> k == 'c'}.value == 3
             assert map.findParallel {item -> item.value > 3}.key == 'd'
-            assert map.findParallel {k, v -> v.value > 3}.value == 4
+            assert map.findParallel {k, v -> v > 3}.value == 4
         }
     }
 
@@ -110,7 +110,7 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
             assert map.findAllParallel {item -> item.key == 'c'} == ['c': 3]
             assert map.findAllParallel {k, v -> k == 'c'} == ['c': 3]
             assert map.findAllParallel {item -> item.value > 3} == ['d': 4, 'e': 5]
-            assert map.findAllParallel {k, v -> v.value > 3} == ['d': 4, 'e': 5]
+            assert map.findAllParallel {k, v -> v > 3} == ['d': 4, 'e': 5]
         }
     }
 
@@ -120,7 +120,7 @@ public class GParsExecutorsPoolOnMapTest extends GroovyTestCase {
             assert map.grepParallel {item -> item.key == 'c'} == ['c': 3]
             assert map.grepParallel {k, v -> k == 'c'} == ['c': 3]
             assert map.grepParallel {item -> item.value > 3} == ['d': 4, 'e': 5]
-            assert map.grepParallel {k, v -> v.value > 3} == ['d': 4, 'e': 5]
+            assert map.grepParallel {k, v -> v > 3} == ['d': 4, 'e': 5]
             assert map.grepParallel(['d': 4].entrySet().iterator().next()) == ['d': 4]
         }
     }

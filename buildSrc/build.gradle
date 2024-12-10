@@ -31,10 +31,10 @@ repositories {
 }
 
 dependencies {
-	compile localGroovy()
-  compile gradleApi()
-  compile(project.ext.grailsDocs) { transitive = false }
-  compile(project.ext.xhtmlRenderer) { transitive = false }
-  compile(project.ext.lowagieItext) { transitive = false }
-  compile(project.ext.radeox) { transitive = false }
+  implementation localGroovy()
+  implementation gradleApi()
+  implementation (project.ext.grailsDocs) { transitive = false }
+  implementation (project.ext.xhtmlRenderer) { transitive = false }
+  implementation (project.ext.lowagieItext) { transitive = false }
+  implementation (project.ext.radeox) { transitive = false }
 }
